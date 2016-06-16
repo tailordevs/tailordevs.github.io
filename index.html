@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+				<title>Devendra Tailor - Developer</title>
+				<!--Import Google Icon Font-->
+				<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+				<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600" rel="stylesheet" type="text/css">
+				<link href="font/material-design-icons/Material-Design-Icons.ttf">
+				<link href="font/roboto/Roboto-Bold.ttf">
+
+				<!--Import materialize.css-->
+				<link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+				<link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
+				<link type="text/css" rel="stylesheet" href="css/animate.css"  media="screen,projection"/>
+		  <link type="text/css" rel="stylesheet" href="css/ont-awesome.min.css"  media="screen,projection"/>
+
+				<!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" /> -->
+				<script type="text/javascript" src="jquery/jquery-2.1.1.min.js"></script>
+		<!-- 		<link rel="stylesheet" href="//cdn.materialdesignicons.com/1.6.50/css/materialdesignicons.min.css">
+ -->
+
+<script type="text/javascript" src="js/materialize.js"></script>
+<script type="text/javascript" src="js/extra.js"></script>
+<script type="text/javascript" src="js/particles.js"></script>
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> -->
+
+
+	<script type="text/javascript">/*! WOW - v1.1.2 - 2015-08-19
+* Copyright (c) 2015 Matthieu Aussaguel; Licensed MIT */(function(){var a,b,c,d,e,f=function(a,b){return function(){return a.apply(b,arguments)}},g=[].indexOf||function(a){for(var b=0,c=this.length;c>b;b++)if(b in this&&this[b]===a)return b;return-1};b=function(){function a(){}return a.prototype.extend=function(a,b){var c,d;for(c in b)d=b[c],null==a[c]&&(a[c]=d);return a},a.prototype.isMobile=function(a){return/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(a)},a.prototype.createEvent=function(a,b,c,d){var e;return null==b&&(b=!1),null==c&&(c=!1),null==d&&(d=null),null!=document.createEvent?(e=document.createEvent("CustomEvent"),e.initCustomEvent(a,b,c,d)):null!=document.createEventObject?(e=document.createEventObject(),e.eventType=a):e.eventName=a,e},a.prototype.emitEvent=function(a,b){return null!=a.dispatchEvent?a.dispatchEvent(b):b in(null!=a)?a[b]():"on"+b in(null!=a)?a["on"+b]():void 0},a.prototype.addEvent=function(a,b,c){return null!=a.addEventListener?a.addEventListener(b,c,!1):null!=a.attachEvent?a.attachEvent("on"+b,c):a[b]=c},a.prototype.removeEvent=function(a,b,c){return null!=a.removeEventListener?a.removeEventListener(b,c,!1):null!=a.detachEvent?a.detachEvent("on"+b,c):delete a[b]},a.prototype.innerHeight=function(){return"innerHeight"in window?window.innerHeight:document.documentElement.clientHeight},a}(),c=this.WeakMap||this.MozWeakMap||(c=function(){function a(){this.keys=[],this.values=[]}return a.prototype.get=function(a){var b,c,d,e,f;for(f=this.keys,b=d=0,e=f.length;e>d;b=++d)if(c=f[b],c===a)return this.values[b]},a.prototype.set=function(a,b){var c,d,e,f,g;for(g=this.keys,c=e=0,f=g.length;f>e;c=++e)if(d=g[c],d===a)return void(this.values[c]=b);return this.keys.push(a),this.values.push(b)},a}()),a=this.MutationObserver||this.WebkitMutationObserver||this.MozMutationObserver||(a=function(){function a(){"undefined"!=typeof console&&null!==console&&console.warn("MutationObserver is not supported by your browser."),"undefined"!=typeof console&&null!==console&&console.warn("WOW.js cannot detect dom mutations, please call .sync() after loading new content.")}return a.notSupported=!0,a.prototype.observe=function(){},a}()),d=this.getComputedStyle||function(a){return this.getPropertyValue=function(b){var c;return"float"===b&&(b="styleFloat"),e.test(b)&&b.replace(e,function(a,b){return b.toUpperCase()}),(null!=(c=a.currentStyle)?c[b]:void 0)||null},this},e=/(\-([a-z]){1})/g,this.WOW=function(){function e(a){null==a&&(a={}),this.scrollCallback=f(this.scrollCallback,this),this.scrollHandler=f(this.scrollHandler,this),this.resetAnimation=f(this.resetAnimation,this),this.start=f(this.start,this),this.scrolled=!0,this.config=this.util().extend(a,this.defaults),null!=a.scrollContainer&&(this.config.scrollContainer=document.querySelector(a.scrollContainer)),this.animationNameCache=new c,this.wowEvent=this.util().createEvent(this.config.boxClass)}return e.prototype.defaults={boxClass:"wow",animateClass:"animated",offset:0,mobile:!0,live:!0,callback:null,scrollContainer:null},e.prototype.init=function(){var a;return this.element=window.document.documentElement,"interactive"===(a=document.readyState)||"complete"===a?this.start():this.util().addEvent(document,"DOMContentLoaded",this.start),this.finished=[]},e.prototype.start=function(){var b,c,d,e;if(this.stopped=!1,this.boxes=function(){var a,c,d,e;for(d=this.element.querySelectorAll("."+this.config.boxClass),e=[],a=0,c=d.length;c>a;a++)b=d[a],e.push(b);return e}.call(this),this.all=function(){var a,c,d,e;for(d=this.boxes,e=[],a=0,c=d.length;c>a;a++)b=d[a],e.push(b);return e}.call(this),this.boxes.length)if(this.disabled())this.resetStyle();else for(e=this.boxes,c=0,d=e.length;d>c;c++)b=e[c],this.applyStyle(b,!0);return this.disabled()||(this.util().addEvent(this.config.scrollContainer||window,"scroll",this.scrollHandler),this.util().addEvent(window,"resize",this.scrollHandler),this.interval=setInterval(this.scrollCallback,50)),this.config.live?new a(function(a){return function(b){var c,d,e,f,g;for(g=[],c=0,d=b.length;d>c;c++)f=b[c],g.push(function(){var a,b,c,d;for(c=f.addedNodes||[],d=[],a=0,b=c.length;b>a;a++)e=c[a],d.push(this.doSync(e));return d}.call(a));return g}}(this)).observe(document.body,{childList:!0,subtree:!0}):void 0},e.prototype.stop=function(){return this.stopped=!0,this.util().removeEvent(this.config.scrollContainer||window,"scroll",this.scrollHandler),this.util().removeEvent(window,"resize",this.scrollHandler),null!=this.interval?clearInterval(this.interval):void 0},e.prototype.sync=function(){return a.notSupported?this.doSync(this.element):void 0},e.prototype.doSync=function(a){var b,c,d,e,f;if(null==a&&(a=this.element),1===a.nodeType){for(a=a.parentNode||a,e=a.querySelectorAll("."+this.config.boxClass),f=[],c=0,d=e.length;d>c;c++)b=e[c],g.call(this.all,b)<0?(this.boxes.push(b),this.all.push(b),this.stopped||this.disabled()?this.resetStyle():this.applyStyle(b,!0),f.push(this.scrolled=!0)):f.push(void 0);return f}},e.prototype.show=function(a){return this.applyStyle(a),a.className=a.className+" "+this.config.animateClass,null!=this.config.callback&&this.config.callback(a),this.util().emitEvent(a,this.wowEvent),this.util().addEvent(a,"animationend",this.resetAnimation),this.util().addEvent(a,"oanimationend",this.resetAnimation),this.util().addEvent(a,"webkitAnimationEnd",this.resetAnimation),this.util().addEvent(a,"MSAnimationEnd",this.resetAnimation),a},e.prototype.applyStyle=function(a,b){var c,d,e;return d=a.getAttribute("data-wow-duration"),c=a.getAttribute("data-wow-delay"),e=a.getAttribute("data-wow-iteration"),this.animate(function(f){return function(){return f.customStyle(a,b,d,c,e)}}(this))},e.prototype.animate=function(){return"requestAnimationFrame"in window?function(a){return window.requestAnimationFrame(a)}:function(a){return a()}}(),e.prototype.resetStyle=function(){var a,b,c,d,e;for(d=this.boxes,e=[],b=0,c=d.length;c>b;b++)a=d[b],e.push(a.style.visibility="visible");return e},e.prototype.resetAnimation=function(a){var b;return a.type.toLowerCase().indexOf("animationend")>=0?(b=a.target||a.srcElement,b.className=b.className.replace(this.config.animateClass,"").trim()):void 0},e.prototype.customStyle=function(a,b,c,d,e){return b&&this.cacheAnimationName(a),a.style.visibility=b?"hidden":"visible",c&&this.vendorSet(a.style,{animationDuration:c}),d&&this.vendorSet(a.style,{animationDelay:d}),e&&this.vendorSet(a.style,{animationIterationCount:e}),this.vendorSet(a.style,{animationName:b?"none":this.cachedAnimationName(a)}),a},e.prototype.vendors=["moz","webkit"],e.prototype.vendorSet=function(a,b){var c,d,e,f;d=[];for(c in b)e=b[c],a[""+c]=e,d.push(function(){var b,d,g,h;for(g=this.vendors,h=[],b=0,d=g.length;d>b;b++)f=g[b],h.push(a[""+f+c.charAt(0).toUpperCase()+c.substr(1)]=e);return h}.call(this));return d},e.prototype.vendorCSS=function(a,b){var c,e,f,g,h,i;for(h=d(a),g=h.getPropertyCSSValue(b),f=this.vendors,c=0,e=f.length;e>c;c++)i=f[c],g=g||h.getPropertyCSSValue("-"+i+"-"+b);return g},e.prototype.animationName=function(a){var b;try{b=this.vendorCSS(a,"animation-name").cssText}catch(c){b=d(a).getPropertyValue("animation-name")}return"none"===b?"":b},e.prototype.cacheAnimationName=function(a){return this.animationNameCache.set(a,this.animationName(a))},e.prototype.cachedAnimationName=function(a){return this.animationNameCache.get(a)},e.prototype.scrollHandler=function(){return this.scrolled=!0},e.prototype.scrollCallback=function(){var a;return!this.scrolled||(this.scrolled=!1,this.boxes=function(){var b,c,d,e;for(d=this.boxes,e=[],b=0,c=d.length;c>b;b++)a=d[b],a&&(this.isVisible(a)?this.show(a):e.push(a));return e}.call(this),this.boxes.length||this.config.live)?void 0:this.stop()},e.prototype.offsetTop=function(a){for(var b;void 0===a.offsetTop;)a=a.parentNode;for(b=a.offsetTop;a=a.offsetParent;)b+=a.offsetTop;return b},e.prototype.isVisible=function(a){var b,c,d,e,f;return c=a.getAttribute("data-wow-offset")||this.config.offset,f=this.config.scrollContainer&&this.config.scrollContainer.scrollTop||window.pageYOffset,e=f+Math.min(this.element.clientHeight,this.util().innerHeight())-c,d=this.offsetTop(a),b=d+a.clientHeight,e>=d&&b>=f},e.prototype.util=function(){return null!=this._util?this._util:this._util=new b},e.prototype.disabled=function(){return!this.config.mobile&&this.util().isMobile(navigator.userAgent)},e}()}).call(this);</script>
+
+				<script type="text/javascript">
+				/* ---- particles.js config ---- */
+$(document).ready(function() {
+				
+
+											
+				
+																
+								
+particlesJS("particles-js", {
+		"particles": {
+				"number": {
+						"value": 80,
+						"density": {
+								"enable": true,
+								"value_area":1200
+						}
+				},
+				"color": {
+						"value": ["#aa73ff", "#f8c210", "#83d238", "#33b1f8"]
+				},
+				
+				"shape": {
+						"type": "circle",
+						"stroke": {
+								"width": 1,
+								"color": "#fff"
+						},
+						"polygon": {
+								"nb_sides": 5
+						},
+						"image": {
+								"src": "",
+								"width": 100,
+								"height": 100
+						}
+				},
+				"opacity": {
+						"value": 1,
+						"random": false,
+						"anim": {
+								"enable": false,
+								"speed": 0.5,
+								"opacity_min": 0.1,
+								"sync": false
+						}
+				},
+				"size": {
+						"value": 3,
+						"random": true,
+						"anim": {
+								"enable": false,
+								"speed": 20,
+								"size_min": 0.3,
+								"sync": false
+						}
+				},
+				"line_linked": {
+						"enable": true,
+						"distance": 120,
+						"color": "#919191",
+						"opacity": 0.4,
+						"width": 1
+				},
+		},
+		"interactivity": {
+				"detect_on": "canvas",
+				"events": {
+						"onhover": {
+								"enable": true,
+								"mode": "grab"
+						},
+						"onclick": {
+								"enable": false
+						},
+						"resize": true
+				},
+				"modes": {
+						"grab": {
+								"distance": 140,
+								"line_linked": {
+										"opacity": 1
+								}
+						},
+						"bubble": {
+								"distance": 400,
+								"size": 500,
+								"duration": 2,
+								"opacity": 8,
+								"speed": 1
+						},
+						"repulse": {
+								"distance": 200,
+								"duration": 0.4
+						},
+						"push": {
+								"particles_nb": 4
+						},
+						"remove": {
+								"particles_nb": 2
+						}
+				}
+		},
+		"retina_detect": true
+});
+				 $(".slider").slider();
+});
+			
+				</script>
+
+</head>
+<body>
+
+
+	
+<!-- Navigation Menu - -->
+
+
+<div id="index-banner" class="parallax-container">
+				<div id="particles-js" class="parallax bg-image-header"></div>
+				<div class="navbar-fixed">
+								<nav class="transparent" style=" transition: all 0.4s ease; z-index:1" role="navigation">
+												<div id="nav-under" class="container-fluid">
+																<a class="brand-logo" id="logo-container" href="#"><img class="responsive-img center img-logo" src="img/white.jpg"></a>
+																<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+																<ul class="right hide-on-med-and-down">
+																				<li><a href="#profile">Profile</a> </li>
+																				<li><a href="#education">Education</a> </li>
+																				<li><a href="#skills">Skills</a> </li>
+																				<li><a href="#experience">Experience</a> </li>
+																				<li><a href="./photography-page.html">Photography</a> </li>
+																				<li><a href="#contact" class="btn-large transparent border-btn">Contact</a> </li>
+																</ul>
+																<ul id="mobile-demo" class="side-nav">
+																					<li><a href="#profile">Profile</a> </li>
+																				<li><a href="#education">Education</a> </li>
+																				<li><a href="#skills">Skills</a> </li>
+																				<li><a href="#experience">Experience</a> </li>
+																				<li><a href="./photography-page.html">Photography</a> </li>
+																				<li><a href="#contact" class="btn-large transparent border-btn">Contact</a> </li>
+																</ul>
+												</div>
+								</nav>
+   
+     
+				</div>
+
+								<div class="container-fluid"style="margin-top:12%;z-index:-1">
+												<div class="row center animated flip" style="margin-top: 3%">
+																<img class="responsive-img circle" style="width: 200px; height: 200px; align-content: center;" src="img/deven_pic.jpg">
+												</div>
+												<div class="row center">
+																				<h3 class="header center white-text animated slideInRight" style="font-weight: 500; letter-spacing: 3px; text-transform:uppercase; ">Devendra Tailor</h3>
+																				<h5 class="header col s12 white-text animated slideInLeft">Web & App Developer</h5>
+												</div>
+												<div class="row center animated flip">
+																<a href="#profile"><img src="icons/downward.png" class="rotate-img"></a>
+												</div>
+								</div>
+</div>
+
+<!--Profile Section -->
+<div id="profile" class="container-fluid   ">
+
+				<div class="container " >
+								<div class="profile-intro ">
+												<div class="row center">
+
+																<h5>A brief background</h5>
+																<p>My interest in web development stemmed from my passion for gaming. Between developing websites and playing video games, I admittedly spend most of my time in front of a screen. Some of my passions are writing clean code, creating well-thought user experiences, and filling up a fresh cup of coffee.</p>
+												</div>
+								</div>
+				</div>
+ 
+</div> 
+
+           <svg id="bottomShape" width="100%" height="55px" fill="orange" viewBox="0 0 1366 30" preserveAspectRatio="none">
+               <path d="m 0.274329,50.862183 1366,0 L 1506,20.3475355 1900.35901,39.96681 -0.00563127,0.20494098 z" stroke-width="0" stroke-dasharray="none" stroke-miterlimit= "4"></path>
+            </svg>
+
+
+<!-- Education Section-->
+
+
+<div id="education" class="container-fluid">
+				<div class="container">
+								<div class="education-section eduBox">
+												<div class="row center">
+																<h5>Education Qualification</h5>
+
+												</div>
+
+												<div class="row animated slideInLeft">
+
+																<div class="col s12 m5 l5 z-depth-2 white" style="min-height:100px; padding:1%">
+																	
+																				<div class="col s4 m3 l3">
+																								<img src="./img/edu_logo/daiict.jpg" class="responsive-img" width="100%">
+																									<p class="light">2014-2016</p>
+																				</div>
+																				<div class="col s8 m9 ">
+																								<h6 class="brown-text">Dhirubhai Ambani Institute of information & computer technology</h6>
+																								<p class="light">Msc.(Information Technology)</p>
+																								<p class="light">DAIICT University</p>
+																				</div>
+																</div>
+													
+																<div class="col s12 m5 l5 z-depth-2 offset-m2 offset-l2 white " style="min-height:100px; padding:1%">
+																	
+																				<div class="col s4 m3 ">
+																								<img src="./img/edu_logo/xica.gif" class="responsive-img" width="100%">
+																								<p class="light">2011-2014</p>
+																				</div>
+																				<div class="col s8 m9 ">
+																								<h6 class="brown-text">Xavier Institute of Computer Applications</h6>
+																								<p class="light">Bachelor of computer application</p>
+																								<p class="light">Gujarat University</p>
+
+																				</div>
+
+																</div>
+												</div>
+													<div class="row  animated slideInRight">
+															<div class="col s12 m5 l5 z-depth-2 white " style="min-height:100px; padding:1%">
+																	
+																				<div class="col s4 m3 center">
+																								<img src="./img/edu_logo/rhhs.jpg" class="responsive-img" width="100%">
+																									<p class="light">2009-2011</p>
+																				</div>
+																				<div class="col s8 m9 ">
+																								<h6 class="brown-text"> Rajasthan School</h6>
+																								<p class="light">HSC(12th)- Commerce</p>
+
+																								<p class="light">Gujarat Board</p>
+																				</div>
+
+																</div>
+													
+																<div class="col s12 m5 l5 z-depth-2 offset-m2 offset-l2 white" style="min-height:100px; padding:1%">
+																	
+																				<div class="col s4 m3">
+																								<img src="./img/edu_logo/rhhs.jpg" class="responsive-img" width="100%">
+																									<p class="light">2006-2019</p>
+																				</div>
+																				<div class="col s8 m9">
+																								<h6 class="brown-text"> Rajasthan School</h6>
+																								<p class="light">SSC(10th)</p>
+																								<p class="light">Gujarat Board</p>
+																				</div>
+																</div>
+												</div>
+								</div>
+				</div>
+</div>
+
+<svg id="bottomShape" width="100%" height="65px" fill="orange" viewBox="0 0 1000 90" preserveAspectRatio="none">
+               <path d="m -160.274329,35.862183 1566,-350 L 16,.3475355 1900.35901,0.96681 -0.00563127,80.20494098 z" stroke-width="0" stroke-dasharray="none" stroke-miterlimit= "4"></path>
+            </svg>
+
+<div id="skills" class="container-fluid">
+				<div class="container-fluid center">
+								<div class="skills-section center">
+												<div class="row center">
+																<h5>Skills</h5>
+																<div class="col s12  l12 center">
+																		<div class="col s3 l2 z-depth-1 white animated bounceInLeft" style="margin:1%">
+																				<img src="./img/skills/android-logo.png" class="responsive-img" width="200%;">
+																				<div class="progress"><div class="determinate animated slideInLeft col s4" style="width: 70%"></div></div>
+																		</div>
+																		<div class="col s3 m3 l2 z-depth-1 white animated bounceInLeft" style="margin:1%">
+																				<img src="./img/skills/java-logo.png" class="responsive-img" width="200px;">
+																					<div class="progress"><div class="determinate animated slideInLeft" style="width: 80%"></div></div>
+																		</div>
+																		<div class="col s3 l2 z-depth-1 white animated bounceInDown " style="margin:1%">
+																				<img src="./img/skills/wordpress-logo.png" class="responsive-img" width="200px;">
+																					<div class="progress"><div class="determinate animated slideInLeft" style="width: 90%"></div></div>
+																		</div>
+																		<div class="col s3 l2 z-depth-1 white animated bounceInRight" style="margin:1%">
+																				<img src="./img/skills/php-logo.png" class="responsive-img" width="200px;">
+																					<div class="progress"><div class="determinate animated slideInLeft" style="width: 60%"></div></div>
+																		</div>
+																		<div class="col s3 l2 z-depth-1 white animated bounceInRight" style="margin:1%">
+																				<img src="./img/skills/js-logo.png" class="responsive-img" width="200px;">
+																				<div class="progress"><div class="determinate animated slideInLeft" style="width: 70%"></div></div>
+																		</div>
+																		<div class="col s3 l2 z-depth-1 white animated bounceInLeft " style="margin:1%">
+																				<img src="./img/skills/html5-logo.png" class="responsive-img" width="200px;">
+																				<div class="progress"><div class="determinate animated slideInLeft" style="width: 85%"></div></div>
+																		</div>
+																		<div class="col s3 l2 z-depth-1 white animated bounceInLeft" style="margin:1%">
+																				<img src="./img/skills/jsp-logo.png" class="responsive-img" width="200px;">
+																				<div class="progress"><div class="determinate animated slideInLeft" style="width: 75%"></div></div>
+																		</div>
+																		<div class="col s3 l2 z-depth-1 white animated bounceInUp" style="margin:1%">
+																				<img src="./img/skills/mysql-logo.png" class="responsive-img" width="200px;">
+																				<div class="progress"><div class="determinate animated slideInLeft" style="width: 75%"></div></div>
+																		</div>
+																		<div class="col s3 l2 z-depth-1 white animated bounceInRight" style="margin:1%">
+																				<img src="./img/skills/cpp-logo.png" class="responsive-img" width="200px;">
+																				<div class="progress"><div class="determinate animated slideInLeft" style="width: 75%"></div></div>
+																		</div>
+																		<div class="col s3 l2 z-depth-1 white animated bounceInRight" style="margin:1%">
+																				<img src="./img/skills/cakephp_golo.png" class="responsive-img" width="200px;">
+																				<div class="progress"><div class="determinate animated slideInLeft" style="width: 60%"></div></div>
+																		</div>
+																</div>
+												</div>
+								</div>
+				</div>
+</div>
+
+
+
+<svg id="bottomShape" width="100%" height="55px" fill="orange" viewBox="0 0 1366 30" preserveAspectRatio="none">
+               <path d="m 0.274329,50.862183 1366,0 L 1506,20.3475355 1900.35901,39.96681 -0.00563127,0.20494098 z" stroke-width="0" stroke-dasharray="none" stroke-miterlimit= "4"></path>
+            </svg>
+<div id="experience" class="container-fluid" >
+		  <div class="container-fluid" style="z-index:-1">
+      <div class="experience-section">
+        <div class="row center" >
+         <h5> Experience</h5>
+        </div>
+
+        <div class="row " >
+
+          <div class="col l12">
+          
+                  <ul class="collapsible popout" data-collapsible="accordion">
+             <li>
+               <div class="collapsible-header animated bounceInLeft "><i class="material-icons">work_black </i>Internship at Tata Consultancy Services(Jan'16-April'16) </div>
+               <div class="collapsible-body white"><p>Guide: Mr. Sandeep Garg<br> Worked on the project titled “Tax Information Management System for Zambia”. The project was in its maintanence phase.</p></div>
+             </li>
+             <li>
+               <div class="collapsible-header animated bounceInRight "><i class="material-icons">work_black </i>Internship at  JSK Web Services(May'15-June’15)  </div>
+               <div class="collapsible-body white"><p>Guide : Mr. Sachin Bhatt<br> Developed online web portal for college.</p></div>
+             </li>
+             <li>
+               <div class="collapsible-header animated bounceInLeft "><i class="material-icons">android</i>Car Pooling Application (Android)</div>
+               <div class="collapsible-body white"><p>Guide : Prof. Asim Banerjee <br>Carpooling Application provides a platform which helps students, employees to have the privilege of post regarding rides, help people who want to go at same destination with low cost, user can have the advantage of giving ride to other user as well as enjoying other rides</p></div>
+             </li>
+             <li>
+               <div class="collapsible-header animated bounceInRight "><i class="material-icons">website</i>Dharampur NGO Wordpress Website</div>
+               <div class="collapsible-body white"><p>NGO Website<br> website link -> <a href="http://www.dharampurproject.com">www.Dharampurproject.com</a></p></div>
+             </li>
+             <li>
+               <div class="collapsible-header animated bounceInLeft "><i class="material-icons">website</i>Social media site</div>
+               <div class="collapsible-body white"><p>Guide : Fr. David Roy SJ <br> Social media site involves the use of the internet to connect users with their friends, family and acquaintances.
+                </p></div>
+             </li>
+             <li>
+               <div class="collapsible-header animated bounceInRight "><i class="material-icons">website</i>Junior Scientist Knowledge Foundation (Wordpress Website) </div>
+               <div class="collapsible-body white"><p>NGO website <br> website link -> <a href="http://www.juniorscientist.in">www.juniorscientist.in</a>
+                </p></div>
+             </li>
+             <li>
+               <div class="collapsible-header animated bounceInLeft "><i class="material-icons">system_update_alt_black_36dp</i>Caller Application (System Design)</div>
+               <div class="collapsible-body white"><p>Guide : Prof. Minal Bhise<br> It was an academic project.It aimed at searching phone numbers of people known to you but not in contact with.
+                </p></div>
+             </li>
+           </ul>
+           </div>
+           
+         </div>
+      </div>
+    </div>
+</div>
+
+<svg id="bottomShape" width="100%" height="65px" fill="orange" viewBox="0 0 1000 90" preserveAspectRatio="none">
+               <path d="m -160.274329,35.862183 1566,-350 L 16,.3475355 1900.35901,0.96681 -0.00563127,80.20494098 z" stroke-width="0" stroke-dasharray="none" stroke-miterlimit= "4"></path>
+            </svg>
+
+
+<div id="contact" class="container-fluid">
+		<div class="container-fluid">
+					<div class="Contact-section center">
+										
+								<div class="row center">
+												<div class="col l12">
+														<div class="col l6">
+															<div class="col l11 offset-l1 ">
+															<ul calss="panel">
+																   <li><i class="material-icons">mail</i> <span class="spaning">Tailordevs@gmail.com</span></li>
+																   <li><i class="material-icons">phone</i> <span class="spaning">+91-8905847690</span></li>
+															</ul>
+															</div>
+														</div>
+														<div class="col l6">
+															<div class="col s12 m12 l12" style="display:inline-block">
+																			<a data-position="top" data-delay="50" data-tooltip="Follow me on Facebook" class="grey-text text-lighten-1 tooltipped" href="https://www.facebook.com/tailordevs"><img src="./img/icons/facebook-box.png" width="40px"></i></a>
+																				<a data-position="top" data-delay="50" data-tooltip="Follow me on Instagram" class="grey-text text-lighten-1 tooltipped" href="https://www.instagram.com/_tailordevs/"><img src="./img/icons/instagram.png" width="40px"></i></a>
+																				<a data-position="top" data-delay="50" data-tooltip="Follow me on Git" class="grey-text text-lighten-1 tooltipped" href="https://github.com/tailordevs"><img src="./img/icons/github-box.png" width="40px"></i></a>
+																				<a data-position="top" data-delay="50" data-tooltip="Linkedin" class="grey-text text-lighten-1 tooltipped" href="https://www.linkedin.com/in/devendra-tailor-1926a2a2"><img src="./img/icons/linkedin-box.png" width="40px"></i></a>
+																				<a data-position="top" data-delay="50" data-tooltip="Twitter" class="grey-text text-lighten-1 tooltipped" href="https://www.twitter.com/tailordevs"><img src="./img/icons/twitter-box.png" width="40px"></i></a>
+																				<a data-position="top" data-delay="50" data-tooltip="Google+" class="grey-text text-lighten-1 tooltipped" href="https://plus.google.com/u/0/104656690716271937819/posts"><img src="./img/icons/google-plus-box.png" width="40px"></i></a>
+															</div>
+														</div>
+
+												</div>
+
+								</div>
+								
+								<!-- <div class="row center black">
+										<p class="white-text text-lighten-1 center">© Developed by Devendra Tailor</p>
+								</div> --><p class="black-text text-lighten-1 center">© Developed by Devendra Tailor</p>
+					</div>
+		</div>
+
+</div>
+
+
+
+
+ 
+        <!--your code end-->
+
+        <!-- Compiled and minified JavaScript -->
+        
+        <!--Materializecss Slider-->
+        <script>
+            $(document).ready(function () {
+                $('.slider').slider({full_width: true});
+                $('.button-collapse').sideNav();
+               
+            });
+
+        </script>         
+   
+ 
+</body>
+</html>
